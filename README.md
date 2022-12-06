@@ -8,7 +8,4 @@
 - logo.png
 - script.js
 - style.css
-
-
-  <img src="[your_relative_path_here](http://url/to/img.png](https://media.discordapp.net/attachments/901945232529162250/1049522388750053416/site.png?width=993&height=559)" width="350" >
-
+- site.png for you to see a preview of the site
