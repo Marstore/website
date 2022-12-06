@@ -115,8 +115,6 @@ body{
 .animated svg{
     width: 100%;
     height: 460px;
-    cursor: grab;
-    
 }
 
 .icon svg{
