@@ -8,16 +8,79 @@
     <link rel="stylesheet" href="style.css">
     <title>MarSTORE</title>
 </head>
-<body>
-    <script src="f11.js"></script>
+<body oncontextmenu="return false">
+  
+   <script>document.onmousedown=disableclick;
+    function disableclick(event)
+    {
+      if(event.button==2)
+       {
+         return false;    
+       }
+    }</script>
+
+  
+    <script>$(document).keydown(function (event) {
+        if (event.keyCode == 123) { // Prevent F12
+            return false;
+        } else if (event.ctrlKey && event.shiftKey && event.keyCode == 73) { // Prevent Ctrl+Shift+I        
+            return false;
+        }
+    });
+    $(document).on("contextmenu", function (e) {        
+    e.preventDefault();
+});</script>
+    <script language="JavaScript">
+      
+        window.onload = function () {
+            document.addEventListener("contextmenu", function (e) {
+                e.preventDefault();
+            }, false);
+            document.addEventListener("keydown", function (e) {
+                //document.onkeydown = function(e) {
+                // "I" key
+                if (e.ctrlKey && e.shiftKey && e.keyCode == 73) {
+                    disabledEvent(e);
+                }
+                // "J" key
+                if (e.ctrlKey && e.shiftKey && e.keyCode == 74) {
+                    disabledEvent(e);
+                }
+                // "S" key + macOS
+                if (e.keyCode == 83 && (navigator.platform.match("Mac") ? e.metaKey : e.ctrlKey)) {
+                    disabledEvent(e);
+                }
+                // "U" key
+                if (e.ctrlKey && e.keyCode == 85) {
+                    disabledEvent(e);
+                }
+                // "F12" key
+                if (event.keyCode == 123) {
+                    disabledEvent(e);
+                }
+            }, false);
+            function disabledEvent(e) {
+                if (e.stopPropagation) {
+                    e.stopPropagation();
+                } else if (window.event) {
+                    window.event.cancelBubble = true;
+                }
+                e.preventDefault();
+                return false;
+            }
+        }
+ //edit: removed ";" from last "}" because of javascript error
+ </script>
+
     <header>
         <nav class="navigation">
+
             
             <img class="logo-ms" src="logo.png" alt="logo-ms">
             <ul class="nav-menu">
                 <li class="nav-item"><a href="#">SERVIÇOS</a></li>
                 <li class="nav-item"><a href="#">EQUIPE</a></li>
-                <li class="nav-item"><a href="#">SUPORT</a></li>
+                <li class="nav-item"><a href="#">SUPORTE</a></li>
                  
                  <div class="icon">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
@@ -40,7 +103,7 @@
             <div class="home-text">
                 <h4 class="text-h4">MARSTORE</h4>
                 <h1 class="text-h1">Quer um design?</h1>
-                <p>Então trabalhe com nós</p>
+                <p>Então trabalhe com a gente</p>
                 <a href="#" class="home-btn">LOJA</a>
             </div>
             <div class="animated">
