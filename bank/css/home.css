@@ -19,8 +19,7 @@
 }
 body{
     color: var(--white);
-    background: var(--degrade);
-   
+    background: var(--degrade); 
 }
 .navigation{
     display: flex;
