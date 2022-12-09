@@ -8,6 +8,7 @@
     list-style: none;
     text-decoration: none;
     transition: all 0.5;
+    
 }
 :root{
     --degrade: linear-gradient(180deg, #001AFF 49.48%, #9E00FF 97.4%);
@@ -15,11 +16,13 @@
     --white:rgb(255, 255, 255);
     --dark:#1e1c2a;
     --no-color: rgba(255, 255, 255, 0);
+    --animate-duration: 3s;
 
 }
 body{
     color: var(--white);
     background: var(--degrade);
+   
 }
 .navigation{
     display: flex;
@@ -164,6 +167,7 @@ body{
     width: 20px;
     margin: 5px;
     cursor: pointer;
+ 
 
 }
 
