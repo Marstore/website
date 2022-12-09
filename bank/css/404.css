@@ -8,18 +8,19 @@
     list-style: none;
     text-decoration: none;
     transition: all 0.5;
+    
 }
 :root{
     --degrade: linear-gradient(180deg, #001AFF 49.48%, #9E00FF 97.4%);
     --red:#000000;
     --white:rgb(255, 255, 255);
-    --dark:#1e1c2a;
+    --dark:#000000;
     --no-color: rgba(255, 255, 255, 0);
-
 }
 body{
     color: var(--white);
     background: var(--degrade);
+   
 }
 .navigation{
     display: flex;
@@ -79,6 +80,44 @@ body{
 .menu .bar:nth-child(3){
     background: var(--white);
 }
+
+.home{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 10%;
+}
+    .home-text{
+        max-width: 37rem;
+    }
+.home-text .text-h4{
+    font-size: 1.5rem;
+    color: var(--white);
+    margin-bottom: 1rem;
+}
+.home-text .text-h1{
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    line-height: 4rem;
+}
+.home-text p{
+    margin-bottom: 4rem;
+}
+.home-btn{
+    padding: 15px 45px;
+    background: var(--red);
+    color: var(--white);
+    border-radius: 10px;
+    font-weight: 700;
+
+}
+.home-btn:hover{
+    background: #000000;
+
+}
+
 .home{
     width: 100%;
     height: 100vh;
@@ -116,43 +155,6 @@ body{
 
 }
 
-.home{
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0px 10%;
-}
-.home-text-erro{
-    max-width: 37rem;
-}
-.home-text-erro .text-h4{
-    font-size: 1.5rem;
-    color: var(--red);
-    margin-bottom: 1rem;
-}
-.home-text-erro .text-h1{
-    font-size: 4rem;
-    margin-bottom: 1rem;
-    line-height: 4rem;
-}
-.home-text-erro p{
-    margin-bottom: 4rem;
-}
-.home-erro-btn{
-    padding: 15px 45px;
-    background: var(--red);
-    color: var(--white);
-    border-radius: 10px;
-    font-weight: 700;
-
-}
-.home-erro-btn:hover{
-    background: #000000;
-
-}
-
 .animated svg{
     width: 100%;
     height: 460px;
@@ -164,13 +166,13 @@ body{
     width: 20px;
     margin: 5px;
     cursor: pointer;
+ 
 
 }
 
 .icon img:hover{
     height: 23px;
     width: 23px;
-    
     transition: all 2.2s;
 }
 
@@ -198,7 +200,7 @@ body{
         height: 100%;
         flex-direction: column;
         background: var(--dark);
-        gap: -10px;
+        
         transition: 0.3s;
     }
     .nav-menu.ativo{
@@ -235,4 +237,12 @@ body{
         width: 40px;
         height: 40px;
     }
+
+    .logo-ms:hover {
+        width: 50px;
+        height: 50px;
+        
+        
+    }
+    
 }
