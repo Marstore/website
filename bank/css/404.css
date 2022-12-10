@@ -13,7 +13,7 @@
 :root{
     --fundo: #121212;
     --red:#2759ce;
-    --white:rgb(143, 143, 143);
+    --white:rgb(255, 255, 255);
     --dark:#121212;
     --no-color: rgba(255, 255, 255, 0);
 }
@@ -114,7 +114,7 @@ body{
 
 }
 .home-btn:hover{
-    background: #000000;
+    background: #121212;
 
 }
 
@@ -151,7 +151,7 @@ body{
 
 }
 .home-btn:hover{
-    background: #000000;
+    background: #121212;
 
 }
 
