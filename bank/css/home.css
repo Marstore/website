@@ -11,15 +11,15 @@
     
 }
 :root{
-    --degrade: linear-gradient(180deg, #001AFF 49.48%, #9E00FF 97.4%);
-    --red:#000000;
-    --white:rgb(255, 255, 255);
-    --dark:#000000;
+    --fundo: #121212;
+    --red:#2759ce;
+    --white:rgb(143, 143, 143);
+    --dark:#121212;
     --no-color: rgba(255, 255, 255, 0);
 }
 body{
     color: var(--white);
-    background: var(--degrade); 
+    background: var(--fundo); 
 }
 .navigation{
     display: flex;

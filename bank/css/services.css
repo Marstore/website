@@ -16,22 +16,24 @@ body
     font-size: 16px;
     font-weight: normal;
     overflow-x: hidden;
-    background: var(--degrade); 
+    background: var(--fundo); 
     
 }
 
 :root
 {
+
+    
     --main-color:#000000;
     --dark: #000000;
-    --shadow-black-100:0 3px 10px rgba(255, 255, 255, 0.562);
+    --shadow-black-100:0 3px 10px #2759ce;
     --shadow-black-300:0 5px 15px rgba(2, 2, 2, 0.747);
     --black-900:rgb(247, 247, 247);
     --black-400:#ffffff;
-    --black-100:#ffffff;
-    --white:#fff;
+    --black-100:#555555;
+    --white:#2759ce;
     --black-alpha-100:rgba(241, 0, 0, 0);
-    --degrade: linear-gradient(180deg, #001AFF 49.48%, #9E00FF 97.4%);
+    --fundo: #121212;
 }
 
 img
