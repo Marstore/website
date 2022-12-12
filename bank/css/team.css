@@ -33,6 +33,19 @@ body {
     }
 }
 
+.logo-ms {
+    width: 80px;
+    height: 80px;
+    cursor: none;
+}
+
+.logo-ms:hover {
+    width: 83px;
+    height: 83px;
+    transition: all 2.2s;
+    
+}
+
 .row {
     display: flex;
     flex-wrap: wrap;
@@ -59,11 +72,12 @@ h1 {
     transition: 0.3s;
 }
 
+
 .card .img-container {
     width: 8em;
     height: 8em;
-    background-color: rgb(255, 255, 255);
-    padding: 0.5em;
+    background-color: #2759ce;
+    padding: 0.2em;
     border-radius: 50%;
     margin: 0 auto 2em auto;
 }
@@ -94,6 +108,11 @@ h1 {
 
 .card a {
     text-decoration: none;
+    color: #2759ce;
+    font-size: 1.4em;
+}
+
+.card a:hover {
     color: #ffffff;
     font-size: 1.4em;
 }
@@ -128,4 +147,23 @@ h1 {
         padding: 0 1em;
     }
     
+}
+
+@media (max-width:785px) {
+    .logo-ms {
+        width: 40px;
+        height: 40px;
+    }
+
+    .logo-ms:hover {
+        width: 50px;
+        height: 50px;
+    }
+    
+    h1 {
+        width: 100%;
+        text-align: center;
+        font-size: 1.8em;
+        color: #ffffff;
+    }
 }
