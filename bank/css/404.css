@@ -11,17 +11,31 @@
     
 }
 :root{
-    --fundo: #121212;
+    --fundo: linear-gradient(-45deg, #0e0e0e 29.69%, #16181D 65.1%, #000000 97.4%);
     --red:#2759ce;
     --white:rgb(255, 255, 255);
     --dark:#121212;
-    --no-color: rgba(255, 255, 255, 0);
+    --no-color: rgba(255, 255, 255, 0); 
 }
 body{
     color: var(--white);
     background: var(--fundo);
-   
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite; height: 100vh;
 }
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50% ;
+    }
+    50% {
+        background-position: 100% 50% ;
+    }
+    100% {
+        background-position: 0% 50% ;
+    }
+}
+
 .navigation{
     display: flex;
     align-items: center;
