@@ -4,7 +4,9 @@
 
 ### 📂 Initial Project 
 
+<code>
 - index.html
 - logo.png
 - script.js
 - style.css
+</code>
