@@ -8,5 +8,3 @@
 - logo.png
 - script.js
 - style.css
-
-# End
