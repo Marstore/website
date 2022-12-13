@@ -1,12 +1,12 @@
-# 🌎 Website - MarSTORE
+### 🌎 Website - MarSTORE
 
-🔗 Link: https://loja.marstore.repl.co/
+### 🔗 Link: https://loja.marstore.repl.co/
 
-📂 Initial Project 
+### 📂 Initial Project 
 
+<code>
 - index.html
 - logo.png
 - script.js
 - style.css
-
-# end
+</code>
